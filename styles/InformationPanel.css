@@ -1,0 +1,42 @@
+.information-panel {
+  height: 50vh;
+  min-height: 300px;
+  margin: 0 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fc758c;
+}
+
+.title-information-panel {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.description-information-panel {
+  width: 33%;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.button-information-panel {
+  background-color: white;
+  border-radius: 2px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  margin: 20px;
+  color: #fc758c;
+  font-size: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  cursor: pointer;
+}

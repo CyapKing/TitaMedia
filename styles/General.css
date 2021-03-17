@@ -1,0 +1,132 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+#screen-size {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 60px;
+  font-weight: bold;
+}
+
+#body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-button {
+  border-radius: 2px;
+  margin: 0 1px;
+  color: #ff5672;
+}
+
+.menu-button span {
+  vertical-align: middle;
+}
+
+.menu-button-selected,
+.menu-button:hover {
+  background-color: #ff5672;
+  color: white;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  #header-bar {
+    height: 20px;
+    margin: 10px;
+  }
+  .menu-button {
+    height: 20px;
+    padding: 0 5px;
+    font-size: 12px;
+  }
+  .menu-button span {
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 601px) {
+  #header-bar {
+    height: 30px;
+    margin: 20px 40px;
+  }
+  .menu-button {
+    height: 30px;
+    padding: 0 10px;
+  }
+  .menu-button span {
+    line-height: 30px;
+  }
+}
+@media (min-width: 900px) {
+  #header-bar {
+    height: 40px;
+    margin: 30px 5%;
+  }
+  .menu-button {
+    height: 40px;
+    padding: 0 30px;
+  }
+  .menu-button span {
+    line-height: 40px;
+  }
+}
+
+#footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+#footer b {
+  margin: 0 5px;
+  color: #ff5672;
+}
+
+#footer span {
+  color: darkgray;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkgray;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray;
+}
