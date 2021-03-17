@@ -39,14 +39,14 @@ function setSelectedModule(moduleName) {
 
 function paintMenuOptions() {
   let buttonsContainer = document.getElementsByClassName("buttons-container");
-  for (const buttonContainer of buttonsContainer) {
-    let menuOptionsHtml = "";
-    menuOptions.forEach((option) => {
-      menuOptionsHtml += `<div 
+  let menuOptionsHtml = "";
+  menuOptions.forEach((option) => {
+    menuOptionsHtml += `<div 
         class="menu-button ${
           option === selectedModule ? "menu-button-selected" : ""
         }" onclick="setSelectedModule('${option}')"><span>${option}</span></div>`;
-    });
+  });
+  for (const buttonContainer of buttonsContainer) {
     buttonContainer.innerHTML = menuOptionsHtml;
   }
   paintImages();
